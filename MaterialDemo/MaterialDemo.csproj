@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC6A7D13-AB45-4913-A691-71FC66658300}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaterialDemo</RootNamespace>
+    <AssemblyName>MaterialDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Content Include="Scripts\bootstrap-material-design\.bower.json" />
+    <Content Include="Scripts\bootstrap-material-design\bower.json" />
+    <Content Include="Scripts\bootstrap-material-design\CHANGELOG.md" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material-wfont.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material-wfont.min.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material.min.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\ripples.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\ripples.min.css.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\fonts\Material-Design-Icons.eot" />
+    <Content Include="Scripts\bootstrap-material-design\dist\fonts\Material-Design-Icons.ttf" />
+    <Content Include="Scripts\bootstrap-material-design\dist\fonts\Material-Design-Icons.woff" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\material.min.js.map" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\ripples.min.js.map" />
+    <Content Include="Scripts\bootstrap-material-design\fonts\Material-Design-Icons.eot" />
+    <Content Include="Scripts\bootstrap-material-design\fonts\Material-Design-Icons.ttf" />
+    <Content Include="Scripts\bootstrap-material-design\fonts\Material-Design-Icons.woff" />
+    <Content Include="Scripts\bootstrap-material-design\less\material-wfont.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\material.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\ripples.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_alerts.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_buttons.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_cards.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_checkboxes.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_colors.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_dialogs.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_icons-material-design.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_icons.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_inputs.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_labels.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_lists.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_mixins.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_navbar.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_panels.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_plugin-dropdownjs.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_plugin-nouislider.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_plugin-selectize.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_plugin-snackbarjs.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_popups.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_progress.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_radios.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_shadows.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_tabs.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_togglebutton.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_variables.less" />
+    <Content Include="Scripts\bootstrap-material-design\less\_welljumbo.less" />
+    <Content Include="Scripts\bootstrap-material-design\LICENSE.md" />
+    <Content Include="Scripts\bootstrap-material-design\package.json" />
+    <Content Include="Scripts\bootstrap-material-design\README.md" />
+    <Content Include="Scripts\bootstrap-material-design\sass\material-wfont.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\material.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\ripples.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_alerts.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_animations.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_buttons.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_cards.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_checkboxes.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_icons-material-design.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_icons.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_inputs.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_lists.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_mixins.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_navbar.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_plugin-nouislider.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_plugin-snackbarjs.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_popups.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_progress.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_radios.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_shadows.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_tabs.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_variables.scss" />
+    <Content Include="Scripts\bootstrap-material-design\sass\_welljumbo.scss" />
+    <Content Include="Scripts\jquery\.bower.json" />
+    <Content Include="Scripts\jquery\bower.json" />
+    <Content Include="Scripts\jquery\dist\jquery.min.map" />
+    <Content Include="Scripts\jquery\src\sizzle\dist\sizzle.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IndexPage.html" />
+    <Content Include="Scripts\bootstrap-material-design\bootstrap-elements.html" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material-wfont.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material-wfont.min.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\material.min.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\ripples.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\ripples.min.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\css\snackbar.min.css" />
+    <Content Include="Scripts\bootstrap-material-design\dist\fonts\LICENSE.txt" />
+    <Content Include="Scripts\bootstrap-material-design\dist\fonts\Material-Design-Icons.svg" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\material.js" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\material.min.js" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\ripples.js" />
+    <Content Include="Scripts\bootstrap-material-design\dist\js\ripples.min.js" />
+    <Content Include="Scripts\bootstrap-material-design\dist\test.html" />
+    <Content Include="Scripts\bootstrap-material-design\fonts\LICENSE.txt" />
+    <Content Include="Scripts\bootstrap-material-design\fonts\Material-Design-Icons.svg" />
+    <Content Include="Scripts\bootstrap-material-design\Gruntfile.js" />
+    <Content Include="Scripts\bootstrap-material-design\scripts\jquery.nouislider.min.js" />
+    <Content Include="Scripts\bootstrap-material-design\scripts\material.js" />
+    <Content Include="Scripts\bootstrap-material-design\scripts\ripples.js" />
+    <Content Include="Scripts\bootstrap-material-design\scripts\snackbar.min.js" />
+    <Content Include="Scripts\jquery\dist\bootstrap.min.js" />
+    <Content Include="Scripts\jquery\dist\jquery.js" />
+    <Content Include="Scripts\jquery\dist\jquery.min.js" />
+    <Content Include="Scripts\jquery\MIT-LICENSE.txt" />
+    <Content Include="Scripts\jquery\src\ajax.js" />
+    <Content Include="Scripts\jquery\src\ajax\jsonp.js" />
+    <Content Include="Scripts\jquery\src\ajax\load.js" />
+    <Content Include="Scripts\jquery\src\ajax\parseJSON.js" />
+    <Content Include="Scripts\jquery\src\ajax\parseXML.js" />
+    <Content Include="Scripts\jquery\src\ajax\script.js" />
+    <Content Include="Scripts\jquery\src\ajax\var\nonce.js" />
+    <Content Include="Scripts\jquery\src\ajax\var\rquery.js" />
+    <Content Include="Scripts\jquery\src\ajax\xhr.js" />
+    <Content Include="Scripts\jquery\src\attributes.js" />
+    <Content Include="Scripts\jquery\src\attributes\attr.js" />
+    <Content Include="Scripts\jquery\src\attributes\classes.js" />
+    <Content Include="Scripts\jquery\src\attributes\prop.js" />
+    <Content Include="Scripts\jquery\src\attributes\support.js" />
+    <Content Include="Scripts\jquery\src\attributes\val.js" />
+    <Content Include="Scripts\jquery\src\callbacks.js" />
+    <Content Include="Scripts\jquery\src\core.js" />
+    <Content Include="Scripts\jquery\src\core\access.js" />
+    <Content Include="Scripts\jquery\src\core\init.js" />
+    <Content Include="Scripts\jquery\src\core\parseHTML.js" />
+    <Content Include="Scripts\jquery\src\core\ready.js" />
+    <Content Include="Scripts\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="Scripts\jquery\src\css.js" />
+    <Content Include="Scripts\jquery\src\css\addGetHookIf.js" />
+    <Content Include="Scripts\jquery\src\css\curCSS.js" />
+    <Content Include="Scripts\jquery\src\css\defaultDisplay.js" />
+    <Content Include="Scripts\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="Scripts\jquery\src\css\support.js" />
+    <Content Include="Scripts\jquery\src\css\swap.js" />
+    <Content Include="Scripts\jquery\src\css\var\cssExpand.js" />
+    <Content Include="Scripts\jquery\src\css\var\getStyles.js" />
+    <Content Include="Scripts\jquery\src\css\var\isHidden.js" />
+    <Content Include="Scripts\jquery\src\css\var\rmargin.js" />
+    <Content Include="Scripts\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="Scripts\jquery\src\data.js" />
+    <Content Include="Scripts\jquery\src\data\accepts.js" />
+    <Content Include="Scripts\jquery\src\data\Data.js" />
+    <Content Include="Scripts\jquery\src\data\var\data_priv.js" />
+    <Content Include="Scripts\jquery\src\data\var\data_user.js" />
+    <Content Include="Scripts\jquery\src\deferred.js" />
+    <Content Include="Scripts\jquery\src\deprecated.js" />
+    <Content Include="Scripts\jquery\src\dimensions.js" />
+    <Content Include="Scripts\jquery\src\effects.js" />
+    <Content Include="Scripts\jquery\src\effects\animatedSelector.js" />
+    <Content Include="Scripts\jquery\src\effects\Tween.js" />
+    <Content Include="Scripts\jquery\src\event.js" />
+    <Content Include="Scripts\jquery\src\event\ajax.js" />
+    <Content Include="Scripts\jquery\src\event\alias.js" />
+    <Content Include="Scripts\jquery\src\event\support.js" />
+    <Content Include="Scripts\jquery\src\exports\amd.js" />
+    <Content Include="Scripts\jquery\src\exports\global.js" />
+    <Content Include="Scripts\jquery\src\intro.js" />
+    <Content Include="Scripts\jquery\src\jquery.js" />
+    <Content Include="Scripts\jquery\src\manipulation.js" />
+    <Content Include="Scripts\jquery\src\manipulation\support.js" />
+    <Content Include="Scripts\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="Scripts\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="Scripts\jquery\src\offset.js" />
+    <Content Include="Scripts\jquery\src\outro.js" />
+    <Content Include="Scripts\jquery\src\queue.js" />
+    <Content Include="Scripts\jquery\src\queue\delay.js" />
+    <Content Include="Scripts\jquery\src\selector-native.js" />
+    <Content Include="Scripts\jquery\src\selector-sizzle.js" />
+    <Content Include="Scripts\jquery\src\selector.js" />
+    <Content Include="Scripts\jquery\src\serialize.js" />
+    <Content Include="Scripts\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="Scripts\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="Scripts\jquery\src\traversing.js" />
+    <Content Include="Scripts\jquery\src\traversing\findFilter.js" />
+    <Content Include="Scripts\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="Scripts\jquery\src\var\arr.js" />
+    <Content Include="Scripts\jquery\src\var\class2type.js" />
+    <Content Include="Scripts\jquery\src\var\concat.js" />
+    <Content Include="Scripts\jquery\src\var\hasOwn.js" />
+    <Content Include="Scripts\jquery\src\var\indexOf.js" />
+    <Content Include="Scripts\jquery\src\var\pnum.js" />
+    <Content Include="Scripts\jquery\src\var\push.js" />
+    <Content Include="Scripts\jquery\src\var\rnotwhite.js" />
+    <Content Include="Scripts\jquery\src\var\slice.js" />
+    <Content Include="Scripts\jquery\src\var\strundefined.js" />
+    <Content Include="Scripts\jquery\src\var\support.js" />
+    <Content Include="Scripts\jquery\src\var\toString.js" />
+    <Content Include="Scripts\jquery\src\wrap.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3907</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3907/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+{
+  "name": "MaterialDemo",
+  "version": "1.0.0",
+  "authors": [
+    "krupa310 <krupanpatel310@gmail.com>"
+  ],
+  "description": "Demo for Material Design",
+  "main": "IndexPage.html",
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "~0.2.1"
+  }
+}
